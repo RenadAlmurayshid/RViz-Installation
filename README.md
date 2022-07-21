@@ -63,10 +63,14 @@ Install Arduino
 6.	Check if the program is present 
 7.	Open the Arduino program 
 8.	You  will see a folder  called an Arduino once you open the program 
+
+
+
 -------------------------------------------------------------------------------------------------------------------------
 Install Rosserial  Arduino  by using these two command :
 •	sudo apt-get install ros-melodic-rosserial-arduino
 •	 sudo apt-get install ros-melodic-rosserial
+
 
 -------------------------------------------------------------------------------------------------------------------------------
 Install ros_lib 
@@ -82,6 +86,9 @@ Uploade the Arduino code
 •	$ ls -l /dev |grep ttyUSB
 •	$ sudo chmod -R 777 /dev/ttyUSB0
 - upload the code from Arduino IDE
+  
+  
+  
 -----------------------------------------------------------------------------------------------------------------------------
 Run Rviz
 •	$ roslaunch robot_arm_pkg check_motors.launch
@@ -94,10 +101,13 @@ Controlling the motors in simulation
 •	You may need to change the permission
 •	$ cd catkin/src/arduino_robot_arm/robot_arm_pkg/scripts
 •	$ sudo chmod +x joint_states_to_gazebo.py 
+  
+  
 --------------------------------------------------------------------------------------------------------------------------
 Moveit in rviz 
 •	$ roslaunch moveit_pkg demo.launch $
 
+  
 ---------------------------------------------------------------------------------------------------------------------------
 Gazebo launch 
 •	$roslaunch moveit_pkg demo_gazebo.launch $
