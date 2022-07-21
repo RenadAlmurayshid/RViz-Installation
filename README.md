@@ -110,7 +110,8 @@ Run Rviz
  
  
 -----------------------------------------------------------------------------------------------------------------------------
-Controlling the motors in simulation
+
+ Controlling the motors in simulation
 •	$ roslaunch robot_arm_pkg check_motors.launch
 •	$ roslaunch robot_arm_pkg check_motors_gazebo.launch
 •	$ rosrun robot_arm_pkg joint_states_to_gazebo.py
