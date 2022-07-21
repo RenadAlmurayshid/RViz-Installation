@@ -68,7 +68,8 @@ roslaunch robot_arm_pkg check_motors.launch
 
 
 -------------------------------------------------------------------------------------------------------------------------
-Install Arduino 
+Install Arduino
+
 1.	Go to the main website :
  https://www.arduino.cc/en/software
 2.	Choose your operating system I chose 64 bits Linux 
@@ -82,29 +83,41 @@ Install Arduino
 
 -------------------------------------------------------------------------------------------------------------------------
 Install Rosserial  Arduino  by using these two command :
+
 •	sudo apt-get install ros-melodic-rosserial-arduino
+
 •	 sudo apt-get install ros-melodic-rosserial
 
 -------------------------------------------------------------------------------------------------------------------------------
 Install ros_lib 
+
 •	$cd <sketchbook>/libraries
+ 
 •	$rm-rf ros lib
+ 
 •	$ rosrun rosserial _arduino make_libraries.py .
 
 
 -----------------------------------------------------------------------------------------------------------------------------------
 Uploade the Arduino code
+ 
 - select the Arduino port to be used on Ubuntu system
+ 
 - change the permissions (it might be ttyACM)
+ 
 •	$ ls -l /dev |grep ttyUSB
+ 
 •	$ sudo chmod -R 777 /dev/ttyUSB0
+ 
 - upload the code from Arduino IDE
  
  
  
 -----------------------------------------------------------------------------------------------------------------------------
 Run Rviz
+ 
 •	$ roslaunch robot_arm_pkg check_motors.launch
+ 
 •	$ rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=115200
  
  
@@ -127,12 +140,14 @@ Run Rviz
  
  
 --------------------------------------------------------------------------------------------------------------------------
-Moveit in rviz 
+Moveit in rviz
+ 
 •	$ roslaunch moveit_pkg demo.launch $
 
  
  
 ---------------------------------------------------------------------------------------------------------------------------
 Gazebo launch 
+ 
 •	$roslaunch moveit_pkg demo_gazebo.launch $
 
