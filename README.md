@@ -83,6 +83,8 @@ $ sudo chmod -R 777 /dev/ttyUSB0
 Run Rviz
 $ roslaunch robot_arm_pkg check_motors.launch
 $ rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=115200
+ 
+ 
 -----------------------------------------------------------------------------------------------------------------------------
 Controlling the motors in simulation
  $ roslaunch robot_arm_pkg check_motors.launch
@@ -91,10 +93,13 @@ $ rosrun robot_arm_pkg joint_states_to_gazebo.py
 You may need to change the permission
 $ cd catkin/src/arduino_robot_arm/robot_arm_pkg/scripts
 $ sudo chmod +x joint_states_to_gazebo.py 
+ 
+ 
 --------------------------------------------------------------------------------------------------------------------------
 Moveit in rviz 
 $ roslaunch moveit_pkg demo.launch $
 
+ 
 ---------------------------------------------------------------------------------------------------------------------------
 Gazebo launch 
 $roslaunch moveit_pkg demo_gazebo.launch $
