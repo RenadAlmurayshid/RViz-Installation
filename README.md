@@ -119,7 +119,6 @@ Controlling the motors in simulation
 •	$ sudo chmod +x joint_states_to_gazebo.py 
  
  
- 
 --------------------------------------------------------------------------------------------------------------------------
 Moveit in rviz 
 •	$ roslaunch moveit_pkg demo.launch $
