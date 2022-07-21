@@ -4,9 +4,11 @@
 RVIZ Initiation 
 
 -	Create a workspace for catkin based on the type you have mine is melodic
+
 •	sudo apt-get install ros-melodic-catkin
 
 -	Within the catkin_ws directory there is a source file 
+
 •	mkdir -p ~/catkin_ws/src
 
 -	Name it as catkin work
